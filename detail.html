@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tom's detail</title>
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/detail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d04695a02.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="profile-floater">
+                <i class="fas fa-user-check"></i>
+                    <p class="pro-name">
+                        Tom Abebe
+                    </p>
+                </div>
+        <!-- The navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sign up
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <form style="margin: 0;padding: 0 !important;">
+                                    <a class="dropdown-item" href="#">Tutor</a>
+                                    <a class="dropdown-item" data-toggle="collapse" data-target="#usersignup" aria-expanded="false" aria-controls="adv">User</a>
+                                    <!-- user signup collapse   -->
+                                    <div style="padding: 1rem" class="collapse" id="usersignup">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf0e0 Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf007 Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control fontAwesome" id="exampleDropdownFormPassword1" placeholder="&#xf084 Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">
+                                                Remember me
+                                            </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-success">Sign up</button>
+                                    </form>            
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                      </a>
+                      <div class="dropdown-menu">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf007 Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control fontAwesome" id="exampleDropdownFormPassword1" placeholder="&#xf084 Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                          <button type="submit" class="btn btn-outline-success">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+                      </div>
+                    </li>
+                
+              </ul>
+              
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+</nav>
+<div class="container-fluid">
+    <div class="col-md-12" >
+        <div class="row justify-content-center" style="margin:3rem 0">
+            <div class="col-md-3 detail-img-cont cont">
+                <img style="max-height: 341px;" src="images/tom.png" alt="" width="100%">
+                <center><h2>Tom Abebe</h2></center>
+                <p style="text-indent: 10px;padding: 10px;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa esse ab placeat porro beatae labore incidunt dignissimos fugiat. Distinctio atque quidem minima architecto a assumenda error facere rem quia nam.
+                </p>
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                       <form id="rating-form" style="text-align: center">
+                            <span class="rating-star">
+                                <input type="radio" name="rating" value="5"><span class="star"></span>
+ 
+                                <input type="radio" name="rating" value="4"><span class="star"></span>
+                            
+                                <input type="radio" name="rating" value="3"><span class="star"></span>
+                            
+                                <input type="radio" name="rating" value="2"><span class="star"></span>
+                            
+                                <input type="radio" name="rating" value="1"><span class="star"></span>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 info-cont">
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Username</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Rating</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="4.7">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Phone</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Telegram</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Age</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Qualification</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label"><i class="fas fa-check-circle"></i></label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Verified">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Price/Hour</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Tutors</label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 comment-cont cont">
+                <div class="col-md-12 comment-box">
+                    <div class="col-md-10 bubble">
+                        <p>He is a good guy</p>
+                    </div>
+                    <div class="col-md-10 bubble">
+                        <p class="bubble-name">Joshua Kimmich</p>
+                        <p class="bubble-comment">This nigga crazy man...fuck he tried to kill me</p>
+                    </div>
+                </div>
+                <div style="text-align: center;padding: 0;" class="col-md-12">
+                    <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                    <button style="margin:0;margin-top:1rem;margin-bottom:1rem" class="btn btn-outline-success">Comment</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="diver">
+                    <center class="related"><h2>Related</h2></center>
+                    <hr style="border-top: 1px solid black;">
+                </div>
+            </div>
+        </div>        
+        <div class="row justify-content-center" style="margin-bottom: 10rem;margin-top: 2rem;">    
+            <div class="col-md-10" style="background-color: whitesmoke;">
+                <div class="row justify-content-around">
+                    <div class="col-md-3 tut-card">
+                                        <div class="row no-gutters" style="padding: 1rem 0;">
+                                            <div class="img-cont">
+                                                <figure>
+                                                    <img style="height:200px;width:100%" src="images/tom.png" alt="">
+                                                    <figcaption><center>Name Lname</center></figcaption>
+                                                </figure>
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="row justify-content-around gender-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Gender
+                                                    </div>
+                                                    <div class="col-6">
+                                                        Male
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around price-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Price
+                                                    </div>
+                                                    <div class="col-6">
+                                                        350 br/h
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around rating-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Rating
+                                                    </div>
+                                                    <div class="col-6">
+                                                        4.7
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around topic-field no-gutters ">
+                                                    <div class="col-4">
+                                                        Tutors
+                                                    </div>
+                                                    <div class="col-8">
+                                                        Topic Topic Topic
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
+                    <div class="col-md-3 tut-card">
+                                        <div class="row no-gutters" style="padding: 1rem 0;">
+                                            <div class="img-cont">
+                                                <figure>
+                                                    <img style="height:200px;width:100%" src="images/tom.png" alt="">
+                                                    <figcaption><center>Name Lname</center></figcaption>
+                                                </figure>
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="row justify-content-around gender-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Gender
+                                                    </div>
+                                                    <div class="col-6">
+                                                        Male
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around price-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Price
+                                                    </div>
+                                                    <div class="col-6">
+                                                        350 br/h
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around rating-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Rating
+                                                    </div>
+                                                    <div class="col-6">
+                                                        4.7
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around topic-field no-gutters ">
+                                                    <div class="col-4">
+                                                        Tutors
+                                                    </div>
+                                                    <div class="col-8">
+                                                        Topic Topic Topic
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
+                    <div class="col-md-3 tut-card">
+                                        <div class="row no-gutters" style="padding: 1rem 0;">
+                                            <div class="img-cont">
+                                                <figure>
+                                                    <img style="height:200px;width:100%" src="images/tom.png" alt="">
+                                                    <figcaption><center>Name Lname</center></figcaption>
+                                                </figure>
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="row justify-content-around gender-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Gender
+                                                    </div>
+                                                    <div class="col-6">
+                                                        Male
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around price-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Price
+                                                    </div>
+                                                    <div class="col-6">
+                                                        350 br/h
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around rating-field no-gutters info-row">
+                                                    <div class="col-6">
+                                                        Rating
+                                                    </div>
+                                                    <div class="col-6">
+                                                        4.7
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-around topic-field no-gutters ">
+                                                    <div class="col-4">
+                                                        Tutors
+                                                    </div>
+                                                    <div class="col-8">
+                                                        Topic Topic Topic
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-md-4">
+            <center><h2>About</h2></center>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quia sunt? Reprehenderit ipsam nisi distinctio quisquam vel magnam aut repudiandae maxime harum sit repellat, perspiciatis ipsum voluptas deleniti excepturi quibusdam.
+            </p>
+        </div>
+        <div class="col-md-4 pl-md-5">
+            <center><h2>Links</h2></center>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+        </div>
+        <div class="col-md-4 pl-md-5" >
+            <center><h2>Contact</h2></center>
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>

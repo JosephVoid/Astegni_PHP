@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account</title>
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/account.css" type="text/css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d04695a02.js"></script>
+</head>
+<body>
+    <div id="pf" class="profile-floater">
+        <i class="fas fa-user-check"></i>
+        <p class="pro-name">Tom Abebe</p>
+        <i style="color: #5d0606c2;padding-top: 3px;" class="fas fa-sign-out-alt"></i>
+    </div>
+    <a id="ll" href="#" class="logout-link">Logout</a>
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sign up
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <form style="margin: 0;padding: 0 !important;">
+                                <a class="dropdown-item" href="#">Tutor</a>
+                                <a class="dropdown-item" data-toggle="collapse" data-target="#usersignup" aria-expanded="false" aria-controls="adv">User</a>
+                                <!-- user signup collapse   -->
+                                <div style="padding: 1rem" class="collapse" id="usersignup">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf0e0 Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf007 Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control fontAwesome" id="exampleDropdownFormPassword1" placeholder="&#xf084 Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Remember me
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-success">Sign up</button>
+                                </form>            
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Account <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p class="new-comer" style="margin: 0">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex tempora rerum consequuntur ipsa quo nemo facere delectus inventore esse expedita iste, corrupti et optio dolor asperiores beatae magni labore corporis?        
+                </p>
+                
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin:3rem 0">
+            <div class="col-md-3 detail-img-cont">
+                <img style="max-height: 341px;" src="images/tom.png" alt="" width="100%">
+                <center><h2>Tom Abebe,19</h2></center>
+                <textarea class="form-control" name="" id="" cols="30" rows="8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam numquam voluptatum blanditiis, error consequuntur soluta? Sunt exercitationem quia quos pariatur laborum iusto iure accusantium labore voluptates praesentium. Adipisci, provident numquam.</textarea>
+                <div class="row justify-content-center prof-info">
+                    <div class="col-md-12"><i class="fas fa-eye"></i>23 People viewed your profile</div>
+                    <div class="col-md-12"><i class="fas fa-dollar-sign"></i>2nd most expensive</div>
+                    <div class="col-md-12"><i class="fas fa-star"></i>54th Rated</div>
+                </div>
+            </div>
+            <div class="col-md-3 info-cont">
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Name</div>
+                    </div>
+                    <input type="text" value="Tom Abebe" class="form-control" id="inlineFormInputGroup">
+                </div>
+               
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Email</div>
+                    </div>
+                    <input type="text" value="email@example.com" class="form-control" id="inlineFormInputGroup">
+                </div>
+               
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Old Password</div>
+                    </div>
+                    <input type="password" class="form-control" id="inlineFormInputGroup">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">New Password</div>
+                    </div>
+                    <input type="password" class="form-control" id="inlineFormInputGroup">
+                </div>
+               
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Phone</div>
+                    </div>
+                    <input type="number" value="0920642556" class="form-control" id="inlineFormInputGroup">
+                </div>
+               
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Telegram</div>
+                    </div>
+                    <input type="text" value="email@example.com" class="form-control" id="inlineFormInputGroup">
+                </div>
+               
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Qualification</div>
+                    </div>
+                    <select class="form-control">
+                        <option>Experiance</option>
+                        <option>High schooler</option>
+                        <option>College student</option>
+                        <option>Degree graduate</option>
+                        <option>Masters graduate</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+               
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label"><i class="fas fa-check-circle"></i></label>
+                    <div class="col-sm-8">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Verified">
+                    </div>
+                </div>
+               
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Price/Hour</div>
+                    </div>
+                    <input type="number" value="300" class="form-control" id="inlineFormInputGroup">
+                </div>
+                
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-4 col-form-label">Tutors</label>
+                    <div class="col-md-12">
+                        <textarea class="form-control"  name="textarea" id="" cols="30" rows="3">Topic</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-4">
+                <center><h2>About</h2></center>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quia sunt? Reprehenderit ipsam nisi distinctio quisquam vel magnam aut repudiandae maxime harum sit repellat, perspiciatis ipsum voluptas deleniti excepturi quibusdam.
+                </p>
+            </div>
+            <div class="col-md-4 pl-md-5">
+                <center><h2>Links</h2></center>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+            </div>
+            <div class="col-md-4 pl-md-5" >
+                <center><h2>Contact</h2></center>
+                <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+            </div>
+        </div>
+        
+    </footer>    
+</body>
+<script>
+// Profile floater js
+$("#pf").click(function(){
+    
+    if ($("#ll").hasClass("show")){
+        $("#pf").removeClass("show-pf");
+        $("#pf").addClass("hide-pf");
+        $("#ll").removeClass("show");
+        $("#ll").addClass("hide");
+    }
+    else{
+        if ( $("#ll").hasClass("hide") ){
+            $("#ll").removeClass("hide");
+            $("#pf").removeClass("hide-pf");
+        }
+        
+        $("#ll").addClass("show");
+        $("#pf").addClass("show-pf");
+    }
+})
+</script>
+</html>

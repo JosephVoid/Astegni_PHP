@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Astegni</title>
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d04695a02.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="profile-nav">
+    <div style="float:left"><i class="fas fa-user-check"></i> : Tom</div><div style="float:right"><i class="fas fa-sign-out-alt"></i> Logout</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sign up
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <form style="margin: 0;padding: 0 !important;">
+                                <a class="dropdown-item" href="#">Tutor</a>
+                                <a class="dropdown-item" data-toggle="collapse" data-target="#usersignup" aria-expanded="false" aria-controls="adv">User</a>
+                                <!-- user signup collapse   -->
+                                <div style="padding: 1rem" class="collapse" id="usersignup">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf0e0 Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf007 Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control fontAwesome" id="exampleDropdownFormPassword1" placeholder="&#xf084 Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Remember me
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-success">Sign up</button>
+                                </form>            
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                  </a>
+                  <div class="dropdown-menu">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control fontAwesome" id="exampleDropdownFormEmail1" placeholder="&#xf007 Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control fontAwesome" id="exampleDropdownFormPassword1" placeholder="&#xf084 Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                      <button type="submit" class="btn btn-outline-success">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+                  </div>
+                </li>
+                
+              </ul>
+              
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 fontAwesome" type="search" placeholder="&#xf002 Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+</nav>
+   
+<div class="container-fluid" style="display: flex;overflow-x: hidden;">
+    <div class="row">
+        <!-- The Advanced search part   -->
+        <div class="col-md-3 adv-search" style="order: 2">
+            <div class="search-form">
+                <center><h3>Advanced Search</h3></center>
+                <form action="">
+                    <div class="row no-gutters">
+                        <div class="input-group mb-4">
+                            
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Name</div>
+                            </div>
+                            
+                            <input type="text" class="form-control" id="inlineFormInputGroup">
+                        </div>
+                        <!-- Price slider -->
+                        
+                        <div class="input-group mb-4">
+                            
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Price</div>
+                                </div>
+                        
+                                <!-- <input onchange="setValue()" id="slider" type="range" class="custom-range" min="0" max="50" value="25" step="1"> -->
+                                <input onchange="setValue()" id="slider" type="range"  min="0" max="50" value="20" step="1" class="form-control-range custom-range-rating">
+                                <div class="input-group-prepend pv">
+                                    <div id="slider-value" class="input-group-text">&lt;100</div>
+                                </div>
+                        </div>
+                        <!-- Radio Inputs -->
+                        <div class="input-group mb-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Female</label>
+                            </div>
+                        </div>
+                        <!-- Checkbox Input -->
+                        <div class="input-group mb-4">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Verified</label>
+                            </div>
+                        </div>
+                        <!-- Age gap input -->
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Age</div>
+                            </div>
+                            <input class="form-control form-inline age-input" type="number" min= "0" max = "65" name="" id="">
+                            <i class="fas fa-minus" style="margin: 11px 20px;"></i>
+                            <input class="form-control form-inline age-input" type="number" min= "0" max = "65" name="" id="">
+                        </div>
+                        <!-- Education input -->
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Education</div>
+                            </div>
+                            <select class="form-control">
+                                <option>Experiance</option>
+                                <option>High schooler</option>
+                                <option>College student</option>
+                                <option>Degree graduate</option>
+                                <option>Masters graduate</option>
+                            </select>
+                        </div>
+                        <!-- Rating input -->
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" style="padding:0.25rem">Rating</div>
+                            </div>
+                        
+                            <input onchange="setRatingValue()" id="rating-slider" type="range"  min="0" max="5" value="3" step="0.05" class="form-control-range custom-range-rating">
+                            <div class="input-group-prepend pv">
+                                <div id="rating-slider-value" class="input-group-text">>3</div>
+                            </div>
+                        </div>
+                        <!-- Topics about -->
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Topic you want</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup">
+                        </div>
+                        <div style="text-align:center;width: 100%">
+                            <button type="submit" class="btn btn-outline-success">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+            <div class="col-md-12">
+                <div class="promo" style="text-align: center">
+                    <p>Sign up now, become a tutor and make easy money.</p>
+                    <button class="btn btn-md btn-success" style="margin: 0">Sign up</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- The main tutor list -->
+        <div class="col-md-9 top-tuts" style="">
+            <a style="color: #363532;" data-toggle="collapse" data-target="#adv" aria-expanded="false" aria-controls="adv" href="#"><center><h3 >Advanced search</h3></center></a>
+            <!-- Advanced search for phones -->
+            <div class="col-md-3 adv-search-phone collapse" id="adv">
+                    
+                    <form action="">
+                        <div class="row no-gutters">
+                            <div class="input-group mb-4">
+                                
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Name</div>
+                                </div>
+                                
+                                <input type="text" class="form-control" id="inlineFormInputGroup">
+                            </div>
+                            <!-- Price slider -->
+                            
+                            <div class="input-group mb-4">
+                                
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Price</div>
+                                    </div>
+                            
+                                    <!-- <input onchange="setValue()" id="slider" type="range" class="custom-range" min="0" max="50" value="25" step="1"> -->
+                                    <input onchange="setValue()" id="slider" type="range"  min="0" max="50" value="20" step="1" class="form-control-range custom-range">
+                                    <div class="input-group-prepend pv">
+                                        <div id="slider-value" class="input-group-text">&lt;100</div>
+                                    </div>
+                            </div>
+                            <!-- Radio Inputs -->
+                            <div class="input-group mb-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">Male</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                </div>
+                            </div>
+                            <!-- Checkbox Input -->
+                            <div class="input-group mb-4">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Verified</label>
+                                </div>
+                            </div>
+                            <!-- Age gap input -->
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Age</div>
+                                </div>
+                                <input class="form-control form-inline age-input" type="number" min= "0" max = "65" name="" id="">
+                                <i class="fas fa-minus" style="margin: 11px 20px;"></i>
+                                <input class="form-control form-inline age-input" type="number" min= "0" max = "65" name="" id="">
+                            </div>
+                            <!-- Education input -->
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Education</div>
+                                </div>
+                                <select class="form-control">
+                                    <option>Experiance</option>
+                                    <option>High schooler</option>
+                                    <option>College student</option>
+                                    <option>Degree graduate</option>
+                                    <option>Masters graduate</option>
+                                </select>
+                            </div>
+                            <!-- Rating input -->
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="padding:0.25rem">Rating</div>
+                                </div>
+                            
+                                <input onchange="setRatingValue()" id="rating-slider" type="range"  min="0" max="5" value="3" step="0.05" class="form-control-range custom-range-rating">
+                                <div class="input-group-prepend pv">
+                                    <div id="rating-slider-value" class="input-group-text">>3</div>
+                                </div>
+                            </div>
+                            <!-- Topics about -->
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Topic you want</div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup">
+                            </div>
+                            <div style="text-align:center;width: 100%">
+                                <button type="submit" class="btn btn-outline-success">Search</button>
+                            </div>
+                        </div>
+                    </form>
+        
+                </div>
+            <center><h3>Top Tutors</h3></center>
+            <div class="row">
+                
+                    <div class="col-md-3 tut-card">
+                        <a href="#" class="tut-link">
+                        <div class="row no-gutters" style="padding: 1rem 0;">
+                        <div class="img-cont">
+                            <figure>
+                                <img style="height:200px;width:100%" src="images/tom.png" alt="">
+                                <figcaption><center>Name Lname</center></figcaption>
+                            </figure>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="col-md-12" style="outline: 1px solid #80808069;outline-offset: 5px;">
+                            <div class="row justify-content-around gender-field no-gutters info-row">
+                                <div class="col-6">
+                                    Gender
+                                </div>
+                                <div class="col-6">
+                                    Male
+                                </div>
+                            </div>
+                            <div class="row justify-content-around price-field no-gutters info-row">
+                                <div class="col-6">
+                                    Price
+                                </div>
+                                <div class="col-6">
+                                    350 br/h
+                                </div>
+                            </div>
+                            <div class="row justify-content-around rating-field no-gutters info-row">
+                                <div class="col-6">
+                                    Rating
+                                </div>
+                                <div class="col-6">
+                                    4.7
+                                </div>
+                            </div>
+                            <div class="row justify-content-around topic-field no-gutters ">
+                                <div class="col-4">
+                                    Tutors
+                                </div>
+                                <div class="col-8" style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">
+                                    Topic Topic Topic Topic Topic Topic
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-md-9 search-result" style="padding:1rem;display: none">
+                <a id="advsearch-result" style="color: #363532;" data-toggle="collapse" data-target="#adv" aria-expanded="false" aria-controls="adv" href="#"><center><h3 >Advanced search</h3></center></a>
+                <!-- Advanced search for phones -->
+                <div class="col-md-3 adv-search-phone collapse" id="adv">
+                        
+                        <form action="">
+                            <div class="row no-gutters">
+                                <div class="input-group mb-4">
+                                    
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Name</div>
+                                    </div>
+                                    
+                                    <input type="text" class="form-control" id="inlineFormInputGroup">
+                                </div>
+                                <!-- Price slider -->
+                                
+                                <div class="input-group mb-4">
+                                    
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Price</div>
+                                        </div>
+                                
+                                        <!-- <input onchange="setValue()" id="slider" type="range" class="custom-range" min="0" max="50" value="25" step="1"> -->
+                                        <input onchange="setValue()" id="slider" type="range"  min="0" max="50" value="20" step="1" class="form-control-range custom-range">
+                                        <div class="input-group-prepend pv">
+                                            <div id="slider-value" class="input-group-text">&lt;100</div>
+                                        </div>
+                                </div>
+                                <!-- Radio Inputs -->
+                                <div class="input-group mb-4">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Male</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                    </div>
+                                </div>
+                                <!-- Checkbox Input -->
+                                <div class="input-group mb-4">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Verified</label>
+                                    </div>
+                                </div>
+                                <!-- Age gap input -->
+                                <div class="input-group mb-4">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Age</div>
+                                    </div>
+                                    <input class="form-control form-inline age-input" type="number" min= "0" max = "65" name="" id="">
+                                    <i class="fas fa-minus" style="margin: 11px 20px;"></i>
+                                    <input class="form-control form-inline age-input" type="number" min= "0" max = "65" name="" id="">
+                                </div>
+                                <!-- Education input -->
+                                <div class="input-group mb-4">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Education</div>
+                                    </div>
+                                    <select class="form-control">
+                                        <option>Experiance</option>
+                                        <option>High schooler</option>
+                                        <option>College student</option>
+                                        <option>Degree graduate</option>
+                                        <option>Masters graduate</option>
+                                    </select>
+                                </div>
+                                <!-- Rating input -->
+                                <div class="input-group mb-4">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text" style="padding:0.25rem">Rating</div>
+                                    </div>
+                                
+                                    <input onchange="setRatingValue()" id="rating-slider" type="range"  min="0" max="5" value="3" step="0.05" class="form-control-range custom-range-rating">
+                                    <div class="input-group-prepend pv">
+                                        <div id="rating-slider-value" class="input-group-text">>3</div>
+                                    </div>
+                                </div>
+                                <!-- Topics about -->
+                                <div class="input-group mb-4">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Topic you want</div>
+                                    </div>
+                                    <input type="text" class="form-control" id="inlineFormInputGroup">
+                                </div>
+                                <div style="text-align:center;width: 100%">
+                                    <button type="submit" class="btn btn-outline-success">Search</button>
+                                </div>
+                            </div>
+                        </form>
+            
+                    </div>
+                <!-- Tutor search-result list          -->
+                <center><h3>Search results</h3></center>
+                <div class="row">
+                    <div class="col-md-3 tut-card">
+                    <div class="row no-gutters" style="padding: 1rem 0;">
+                        <div class="img-cont">
+                            <figure>
+                                <img style="height:200px;width:100%" src="images/tom.png" alt="">
+                                <figcaption><center>Name Lname</center></figcaption>
+                            </figure>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="col-md-12" style="outline: 1px solid #80808069;outline-offset: 5px;">
+                            <div class="row justify-content-around gender-field no-gutters info-row">
+                                <div class="col-6">
+                                    Gender
+                                </div>
+                                <div class="col-6">
+                                    Male
+                                </div>
+                            </div>
+                            <div class="row justify-content-around price-field no-gutters info-row">
+                                <div class="col-6">
+                                    Price
+                                </div>
+                                <div class="col-6">
+                                    350 br/h
+                                </div>
+                            </div>
+                            <div class="row justify-content-around rating-field no-gutters info-row">
+                                <div class="col-6">
+                                    Rating
+                                </div>
+                                <div class="col-6">
+                                    4.7
+                                </div>
+                            </div>
+                            <div class="row justify-content-around topic-field no-gutters ">
+                                <div class="col-4">
+                                    Tutors
+                                </div>
+                                <div class="col-8" style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">
+                                    Topic Topic Topic Topic Topic Topic
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>    
+</div>
+<footer>
+    <div class="row">
+        <div class="col-md-4">
+            <center><h2>About</h2></center>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quia sunt? Reprehenderit ipsam nisi distinctio quisquam vel magnam aut repudiandae maxime harum sit repellat, perspiciatis ipsum voluptas deleniti excepturi quibusdam.
+            </p>
+        </div>
+        <div class="col-md-4 pl-md-5">
+            <center><h2>Links</h2></center>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+        </div>
+        <div class="col-md-4 pl-md-5" >
+            <center><h2>Contact</h2></center>
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+        </div>
+    </div>
+    
+</footer>
+</body>
+<script>
+function setValue(){
+    var slider = document.getElementById("slider")
+    var ValDisp = document.getElementById("slider-value")
+    ValDisp.innerHTML = "<"+slider.value * 5
+}
+function setRatingValue(){
+    var Rslider = document.getElementById("rating-slider")
+    var RValDisp = document.getElementById("rating-slider-value")
+    RValDisp.innerHTML = ">"+Rslider.value
+}
+</script>
+</html>
